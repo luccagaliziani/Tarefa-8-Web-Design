@@ -1,0 +1,322 @@
+/* 6. Comentando todo o código para explicar o que cada parte faz. */
+
+/* === 1. Configurações Globais e Variáveis de Cor === */
+
+/* A regra ':root' permite definir variáveis CSS globais, facilitando a manutenção do tema. */
+:root {
+    /* Paleta de cores inspirada em Valorant */
+    --color-background: #0F1923;  /* Azul quase preto do fundo */
+    --color-surface: #1a2838;    /* Cor de superfície para cards e header */
+    --color-primary: #FF4655;    /* Vermelho vibrante de destaque */
+    --color-text: #ECE8E1;       /* Cor de texto principal (quase branco) */
+    --color-text-secondary: #bdc4d1; /* Cor de texto secundário */
+    --color-border: #2b3a4a;     /* Cor para bordas sutis */
+
+    /* Fontes */
+    --font-primary: 'Roboto', sans-serif;
+}
+
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho do elemento */
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave para links de âncora (ex: href="#agentes") */
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+.container {
+    width: 90%; /* Usa porcentagem para ser mais fluido */
+    max-width: 1200px; /* Largura máxima para telas grandes */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* === 2. Estilos do Cabeçalho (Header) === */
+
+.site-header {
+    background-color: var(--color-surface);
+    border-bottom: 3px solid var(--color-primary);
+    padding: 1rem 0;
+    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    /* 3. Propriedades de Flexbox para o Cabeçalho */
+    display: flex;                /* 1. Ativa o flexbox */
+    justify-content: space-between; /* 2. Alinha o logo à esquerda e a nav à direita */
+    align-items: center;          /* 3. Centraliza verticalmente os itens */
+    flex-wrap: wrap;              /* 4. Permite que os itens quebrem linha em telas pequenas */
+}
+
+.logo h1 {
+    color: var(--color-text);
+    margin: 0;
+    font-weight: 900;
+}
+.logo span {
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+}
+
+.main-nav .nav-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    font-weight: 700;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+
+/* === 3. Seção Hero (Banner de Introdução) === */
+
+.hero-section {
+    background: linear-gradient(rgba(15, 25, 35, 0.8), rgba(15, 25, 35, 0.8)), url('https://via.placeholder.com/1920x500.png?text=Valorant+Background') no-repeat center center/cover;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+.hero-section h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+
+/* === 4. Seção da Galeria de Agentes (Flexbox em Ação) === */
+
+.agent-section {
+    padding: 60px 0;
+}
+
+.agent-gallery {
+    /* 3. Adicionando mais de 20 propriedades de Flexbox e relacionadas */
+    display: flex;               /* 5. Ativa o flexbox */
+    flex-direction: row;         /* 6. Direção dos itens */
+    flex-wrap: wrap;             /* 7. Permite a quebra de linha */
+    justify-content: center;     /* 8. Alinhamento horizontal */
+    align-items: stretch;        /* 9. Alinhamento vertical (itens esticam para ter a mesma altura) */
+    gap: 30px;                   /* 10. Espaçamento entre os itens */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.agent-card {
+    /* 2. Propriedades de Content, Padding, Border e Margin */
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento externo (coberto por 'gap') */
+    text-align: center;
+    overflow: hidden; /* Garante que nada saia do card com border-radius */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    animation: fadeIn 0.5s ease-out forwards;
+
+    /* Propriedades do Item Flex */
+    flex-grow: 1;                /* 11. Permite que o item cresça */
+    flex-shrink: 1;              /* 12. Permite que o item encolha */
+    flex-basis: 280px;           /* 13. Tamanho base do item */
+    display: flex;               /* 14. Usando flexbox DENTRO do card também */
+    flex-direction: column;      /* 15. Itens do card empilhados verticalmente */
+}
+
+.agent-card:hover {
+    transform: translateY(-10px) scale(1.03); /* Efeito de elevação e zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-primary);
+}
+
+.agent-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.agent-info {
+    padding: 0 10px;
+    display: flex;               /* 16. Flexbox para o conteúdo de texto */
+    flex-direction: column;      /* 17. Direção vertical */
+    flex-grow: 1;                /* 18. Faz essa área crescer para ocupar o espaço */
+}
+
+.agent-info h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.agent-role {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-bottom: 15px;
+    flex-grow: 1;                /* 19. Empurra a lista de habilidades para baixo */
+}
+
+.abilities {
+    text-align: left;
+    border-top: 1px solid var(--color-border);
+    padding-top: 10px;
+    margin-top: auto; /* Alinha no final do card */
+}
+
+.abilities h4 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.abilities ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding-left: 0;
+}
+
+.abilities li {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    padding: 3px 0;
+}
+
+
+/* === 5. Seção de Mapas === */
+.maps-section {
+    padding: 60px 0;
+    background-color: var(--color-surface);
+}
+
+.maps-gallery {
+    display: grid; /* Usando Grid Layout aqui para variar */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.map-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.map-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.map-card:hover img {
+    transform: scale(1.1);
+}
+
+.map-card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+/* === 6. Estilos do Rodapé (Footer) === */
+
+.site-footer {
+    background-color: #0A1118;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 0; /* Removido margin top pois a seção de mapas tem bg */
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+
+/* === 7. Design Responsivo (Media Queries) === */
+
+/* Para Tablets (até 992px) */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .hero-section h2 {
+        font-size: 2.8rem;
+    }
+    .agent-card {
+        flex-basis: 250px; /* Diminui a base dos cards para caber mais */
+    }
+}
+
+/* Para Celulares (até 600px) */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column; /* Empilha o logo e a navegação */
+        gap: 15px;
+    }
+    
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .agent-gallery {
+        flex-direction: column; /* Empilha os cards em uma única coluna */
+        align-items: center; /* Centraliza os cards */
+    }
+
+    .agent-card {
+        width: 100%;
+        max-width: 350px; /* Largura máxima para os cards no mobile */
+        flex-basis: auto; /* Reseta a base flex */
+    }
+
+    .maps-gallery {
+        grid-template-columns: 1fr; /* Uma coluna para os mapas */
+    }
+    /* Estilo para o card de agente destacado pelo JavaScript */
+.agent-card.highlighted-card {
+    border: 3px solid #00ffff; /* Uma cor ciano vibrante para o destaque */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff;
+}
+}
