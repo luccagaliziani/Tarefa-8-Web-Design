@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site de fã sobre os agentes e mapas de Valorant, criado para um projeto de Web Design.">
+    <meta name="author" content="Lucca">
+
+    <title>Guia Valorant - Agentes e Mapas</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>VALORANT</h1>
+                <span>PROJECT</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#agentes" class="nav-link active">Agentes</a>
+                <a href="#arsenal" class="nav-link">Arsenal</a>
+                <a href="#mapas" class="nav-link">Mapas</a>
+                <a href="#dicas" class="nav-link">Dicas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h2>DOMINE O JOGO</h2>
+                <p>Conheça os agentes, suas habilidades e os campos de batalha de Valorant.</p>
+            </div>
+        </section>
+
+        <section id="agentes" class="agent-section">
+            <div class="container">
+                <h2 class="section-title">ESCOLHA SEU AGENTE</h2>
+                
+                <div class="agent-gallery">
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/0c/bb/a5/0cbba5e0f2aea12625b7574732870a73.jpg" alt="Agente Jett">
+                        <div class="agent-info">
+                            <h3>Jett</h3>
+                            <p class="agent-role">Duelista</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Corrente Ascendente <p class="ability-description">Impulsiona Jett para o alto instantaneamente.</p></li>
+                                    <li>E - Brisa de Impulso <p class="ability-description">Avança Jett em alta velocidade na direção em que está se movendo.</p></li>
+                                    <li>C - Erupção das Brumas <p class="ability-description">Lança uma nuvem de fumaça que bloqueia a visão.</p></li>
+                                    <li>X - Tormenta de Aço <p class="ability-description">Equipa adagas de arremesso que recarregam ao eliminar um oponente.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/1200x/d8/26/ca/d826ca9d2dab6bf659d5e15ff291fbcc.jpg" alt="Agente Phoenix">
+                        <div class="agent-info">
+                            <h3>Phoenix</h3>
+                            <p class="agent-role">Duelista</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Bola Curva <p class="ability-description">Lança um orbe de luz que cega inimigos que olharem para ele.</p></li>
+                                    <li>E - Mãos Quentes <p class="ability-description">Arremessa uma bola de fogo que explode ao atingir o chão, curando Phoenix.</p></li>
+                                    <li>C - Labareda <p class="ability-description">Cria uma parede de chamas que bloqueia a visão e causa dano.</p></li>
+                                    <li>X - Renascimento <p class="ability-description">Marca sua localização e renasce nela com vida cheia se morrer durante a ultimate.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/95/4d/bd/954dbdeb9bada011702521d548a08b9a.jpg" alt="Agente Reyna">
+                        <div class="agent-info">
+                            <h3>Reyna</h3>
+                            <p class="agent-role">Duelista</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Devorar <p class="ability-description">Consome uma Orbe de Alma próxima para se curar rapidamente.</p></li>
+                                    <li>E - Dispensar <p class="ability-description">Consome uma Orbe de Alma para se tornar brevemente intangível.</p></li>
+                                    <li>C - Olhar Voraz <p class="ability-description">Lança um olho etéreo que limita a visão dos inimigos que o olham.</p></li>
+                                    <li>X - Imperatriz <p class="ability-description">Aumenta drasticamente a velocidade de disparo, equipamento e recarga.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/30/37/8a/30378af6c20365cdaaf5a6cb306430e7.jpg" alt="Agente Sage">
+                        <div class="agent-info">
+                            <h3>Sage</h3>
+                            <p class="agent-role">Sentinela</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Orbe de Lentidão <p class="ability-description">Cria um campo no chão que desacelera os jogadores que passam por ele.</p></li>
+                                    <li>E - Orbe Curativo <p class="ability-description">Cura um aliado ou a si mesma ao longo do tempo.</p></li>
+                                    <li>C - Orbe de Barreira <p class="ability-description">Cria uma parede sólida e fortificada em qualquer lugar do mapa.</p></li>
+                                    <li>X - Ressurreição <p class="ability-description">Revive um aliado com a vida completa.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/a1/18/21/a1182178ff04b60fa74d62b6b93d21ec.jpg" alt="Agente Sova">
+                        <div class="agent-info">
+                            <h3>Sova</h3>
+                            <p class="agent-role">Iniciador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Flecha de Choque <p class="ability-description">Dispara uma flecha explosiva que causa dano em área.</p></li>
+                                    <li>E - Flecha Rastreadora <p class="ability-description">Dispara uma flecha que revela a localização de inimigos próximos.</p></li>
+                                    <li>C - Drone Coruja <p class="ability-description">Controla um drone que pode disparar um dardo para revelar inimigos.</p></li>
+                                    <li>X - Fúria do Caçador <p class="ability-description">Dispara até três rajadas de energia que atravessam paredes e revelam inimigos.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/1200x/92/8a/c2/928ac28deb7ddd94f8260f66c00abc27.jpg" alt="Agente Omen">
+                        <div class="agent-info">
+                            <h3>Omen</h3>
+                            <p class="agent-role">Controlador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Paranoia <p class="ability-description">Lança uma sombra que atravessa paredes e limita a visão dos inimigos.</p></li>
+                                    <li>E - Manto Sombrio <p class="ability-description">Lança um orbe de fumaça de longa duração em um local marcado.</p></li>
+                                    <li>C - Passos Tenebrosos <p class="ability-description">Teletransporta Omen para um local próximo após um curto período.</p></li>
+                                    <li>X - Salto das Sombras <p class="ability-description">Teletransporta Omen para qualquer lugar do mapa.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/ab/9b/a4/ab9ba4a8be20c0c739208872a6728d67.jpg" alt="Agente Brimstone">
+                        <div class="agent-info">
+                            <h3>Brimstone</h3>
+                            <p class="agent-role">Controlador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Incendiário <p class="ability-description">Lança uma granada que cria uma poça de fogo no chão.</p></li>
+                                    <li>E - Fumaça Celeste <p class="ability-description">Usa um mapa tático para lançar até três nuvens de fumaça de longa duração.</p></li>
+                                    <li>C - Sinalizador Estimulante <p class="ability-description">Cria um campo que concede Tiro Rápido aos jogadores.</p></li>
+                                    <li>X - Ataque Orbital <p class="ability-description">Lança um ataque de laser orbital devastador em um local selecionado.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/ab/c6/05/abc605a5291caf0779fd8953aa4c58e2.jpg" alt="Agente Cypher">
+                        <div class="agent-info">
+                            <h3>Cypher</h3>
+                            <p class="agent-role">Sentinela</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Jaula Cibernética <p class="ability-description">Cria uma zona que bloqueia a visão e desacelera inimigos que a atravessam.</p></li>
+                                    <li>E - Câmera de Vigilância <p class="ability-description">Posiciona uma câmera que pode ser usada para vigiar locais e disparar dardos.</p></li>
+                                    <li>C - Fio-armadilha <p class="ability-description">Posiciona um fio que revela e atordoa o primeiro inimigo que o cruza.</p></li>
+                                    <li>X - Assalto Neural <p class="ability-description">Extrai informações do corpo de um inimigo morto para revelar a localização dos vivos.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/1c/5e/5e/1c5e5ed6093ef74297f6c71135f630c2.jpg" alt="Agente Viper">
+                        <div class="agent-info">
+                            <h3>Viper</h3>
+                            <p class="agent-role">Controlador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Nuvem Venenosa <p class="ability-description">Lança um emissor de gás que pode ser reativado para criar uma nuvem tóxica.</p></li>
+                                    <li>E - Cortina Tóxica <p class="ability-description">Dispara uma linha de emissores de gás que cria uma parede tóxica.</p></li>
+                                    <li>C - Veneno de Cobra <p class="ability-description">Lança um cartucho que se quebra e cria uma poça de ácido.</p></li>
+                                    <li>X - Poço Peçonhento <p class="ability-description">Cria uma nuvem tóxica massiva que destaca inimigos dentro dela.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/5f/1f/54/5f1f54ea5338c8eb7b338362664e0522.jpg" alt="Agente Killjoy">
+                        <div class="agent-info">
+                            <h3>Killjoy</h3>
+                            <p class="agent-role">Sentinela</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Robô de Alarme <p class="ability-description">Implanta um robô que persegue inimigos e os deixa vulneráveis.</p></li>
+                                    <li>E - Torreta <p class="ability-description">Implanta uma torreta que atira em inimigos em um cone de 180 graus.</p></li>
+                                    <li>C - Nanoenxame <p class="ability-description">Lança uma granada que se torna oculta e causa dano em área ao ser ativada.</p></li>
+                                    <li>X - Confinamento <p class="ability-description">Implanta um dispositivo que detém todos os inimigos em seu raio de ação.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/0d/cb/47/0dcb476e4fbc5ce2c466bd445cf46e32.jpg" alt="Agente Breach">
+                        <div class="agent-info">
+                            <h3>Breach</h3>
+                            <p class="agent-role">Iniciador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Estopim <p class="ability-description">Dispara uma carga cegante através de paredes.</p></li>
+                                    <li>E - Falha Tectônica <p class="ability-description">Cria um terremoto em linha reta que atordoa inimigos.</p></li>
+                                    <li>C - Pós-choque <p class="ability-description">Dispara uma explosão de fusão através de paredes que causa dano pesado.</p></li>
+                                    <li>X - Onda Trovejante <p class="ability-description">Cria um terremoto em cascata que atordoa e lança inimigos para o ar.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/08/77/6e/08776ed8dc11b69f696147e7bfee324a.jpg" alt="Agente Skye">
+                        <div class="agent-info">
+                            <h3>Skye</h3>
+                            <p class="agent-role">Iniciador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Predador Explosivo <p class="ability-description">Equipa um lobo da tasmânia que pode ser controlado para explodir e causar dano.</p></li>
+                                    <li>E - Luz Desbravadora <p class="ability-description">Equipa um falcão que pode ser controlado e transformado em um flash.</p></li>
+                                    <li>C - Reflorescer <p class="ability-description">Cura aliados em um raio e alcance limitados.</p></li>
+                                    <li>X - Rastreadores <p class="ability-description">Lança três rastreadores que buscam os inimigos mais próximos e limitam sua visão.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/3c/9f/1b/3c9f1b767dee34c982871c9f93950345.jpg" alt="Agente Yoru">
+                        <div class="agent-info">
+                            <h3>Yoru</h3>
+                            <p class="agent-role">Duelista</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Ponto Cego <p class="ability-description">Arremessa um fragmento dimensional que cega inimigos ao quicar em superfícies.</p></li>
+                                    <li>E - Passagem Dimensional <p class="ability-description">Lança um vínculo dimensional que pode ser usado para teletransporte.</p></li>
+                                    <li>C - Distração <p class="ability-description">Cria um eco que imita o som de passos para enganar inimigos.</p></li>
+                                    <li>X - Espionagem Dimensional <p class="ability-description">Fica invisível e invulnerável, podendo se mover pelo mapa sem ser visto.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/02/4a/cd/024acd745a7310703e2f2ba20f07a27c.jpg" alt="Agente Astra">
+                        <div class="agent-info">
+                            <h3>Astra</h3>
+                            <p class="agent-role">Controlador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Pulso Nova <p class="ability-description">Ativa uma estrela para detonar um pulso que atordoa inimigos.</p></li>
+                                    <li>E - Nebulosa <p class="ability-description">Ativa uma estrela para transformá-la em uma fumaça.</p></li>
+                                    <li>C - Poço Gravitacional <p class="ability-description">Ativa uma estrela para puxar inimigos para o centro e explodir.</p></li>
+                                    <li>X - Divisa Cósmica <p class="ability-description">Cria uma parede infinita que bloqueia balas e abafa o som.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/4d/75/fc/4d75fc67b0a71851906e0290c2b7cfb2.jpg" alt="Agente KAY/O">
+                        <div class="agent-info">
+                            <h3>KAY/O</h3>
+                            <p class="agent-role">Iniciador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Granada/CLACK <p class="ability-description">Lança uma granada de flash que cega inimigos.</p></li>
+                                    <li>E - Ponto/ZERO <p class="ability-description">Lança uma lâmina de supressão que impede inimigos de usarem habilidades.</p></li>
+                                    <li>C - Fragmento/EXPLOSIVO <p class="ability-description">Lança um fragmento explosivo que causa dano em área.</p></li>
+                                    <li>X - Anular/CMD <p class="ability-description">Suprime inimigos próximos e pode ser reanimado se for abatido.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/f4/e7/74/f4e774bd8c0672400fdc68a4667456df.jpg" alt="Agente Chamber">
+                        <div class="agent-info">
+                            <h3>Chamber</h3>
+                            <p class="agent-role">Sentinela</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Caçador de Cabeças <p class="ability-description">Equipa uma pistola pesada com mira.</p></li>
+                                    <li>E - Rendezvous <p class="ability-description">Posiciona duas âncoras de teletransporte.</p></li>
+                                    <li>C - Marca Registrada <p class="ability-description">Posiciona uma armadilha que desacelera inimigos.</p></li>
+                                    <li>X - Tour de Force <p class="ability-description">Equipa um poderoso rifle de precisão personalizado.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/2e/45/1d/2e451d1fb9576dc4ed1f59d63d4c7b32.jpg" alt="Agente Neon">
+                        <div class="agent-info">
+                            <h3>Neon</h3>
+                            <p class="agent-role">Duelista</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Ricochete Elétrico <p class="ability-description">Lança um raio de energia que ricocheteia e atordoa.</p></li>
+                                    <li>E - Via Expressa <p class="ability-description">Cria duas paredes de energia estática que bloqueiam a visão.</p></li>
+                                    <li>C - Equipamento Voltaico <p class="ability-description">Aumenta drasticamente a velocidade de movimento de Neon.</p></li>
+                                    <li>X - Sobrecarga <p class="ability-description">Dispara um raio elétrico letal com alta precisão em movimento.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/79/ad/08/79ad08d1f59be7ef97461815df75a9d7.jpg" alt="Agente Fade">
+                        <div class="agent-info">
+                            <h3>Fade</h3>
+                            <p class="agent-role">Iniciador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Clausura <p class="ability-description">Lança um nó de pavor puro que prende inimigos próximos.</p></li>
+                                    <li>E - Assombrar <p class="ability-description">Lança um orbe que revela inimigos e cria rastros de terror.</p></li>
+                                    <li>C - Espreitador <p class="ability-description">Lança uma criatura que busca inimigos e limita sua visão.</p></li>
+                                    <li>X - Véu da Noite <p class="ability-description">Lança uma onda de energia que ensurdece e decai inimigos.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/736x/25/36/b8/2536b8deca663c45dc67e8581aec07d7.jpg" alt="Agente Harbor">
+                        <div class="agent-info">
+                            <h3>Harbor</h3>
+                            <p class="agent-role">Controlador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Cascata <p class="ability-description">Cria uma onda de água que avança e desacelera inimigos.</p></li>
+                                    <li>E - Maré Alta <p class="ability-description">Cria uma parede de água que pode ser curvada.</p></li>
+                                    <li>C - Enseada <p class="ability-description">Cria um escudo de água esférico que bloqueia balas.</p></li>
+                                    <li>X - Acerto de Contas <p class="ability-description">Cria uma área de gêiseres que atordoam inimigos.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <img src="https://i.pinimg.com/1200x/75/a2/a6/75a2a66994e8889376e3c7f1b0bd5ff7.jpg" alt="Agente Gekko">
+                        <div class="agent-info">
+                            <h3>Gekko</h3>
+                            <p class="agent-role">Iniciador</p>
+                            <div class="abilities">
+                                <h4>Habilidades:</h4>
+                                <ul>
+                                    <li>Q - Wingman <p class="ability-description">Lança um companheiro que pode plantar a Spike ou atordoar inimigos.</p></li>
+                                    <li>E - Dizzy <p class="ability-description">Lança uma criatura que cega inimigos em sua linha de visão.</p></li>
+                                    <li>C - Mosh Pit <p class="ability-description">Lança uma gosma que explode em uma área, causando dano.</p></li>
+                                    <li>X - Thrash <p class="ability-description">Controla uma criatura que pode explodir para deter inimigos.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </section> 
+        
+        <section id="arsenal" class="arsenal-section">
+            <div class="container">
+                <h2 class="section-title">ARSENAL DO JOGO</h2>
+                
+                <div class="weapon-category">
+                    <h3>Pistolas</h3>
+                    <div class="weapon-gallery">
+                        <div class="weapon-card"><h4>Classic</h4></div>
+                        <div class="weapon-card"><h4>Shorty</h4></div>
+                        <div class="weapon-card"><h4>Frenzy</h4></div>
+                        <div class="weapon-card"><h4>Ghost</h4></div>
+                        <div class="weapon-card"><h4>Sheriff</h4></div>
+                    </div>
+                </div>
+
+                <div class="weapon-category">
+                    <h3>Submetralhadoras</h3>
+                    <div class="weapon-gallery">
+                        <div class="weapon-card"><h4>Stinger</h4></div>
+                        <div class="weapon-card"><h4>Spectre</h4></div>
+                    </div>
+                </div>
+
+                <div class="weapon-category">
+                    <h3>Fuzis</h3>
+                    <div class="weapon-gallery">
+                        <div class="weapon-card"><h4>Bulldog</h4></div>
+                        <div class="weapon-card"><h4>Guardian</h4></div>
+                        <div class="weapon-card"><h4>Phantom</h4></div>
+                        <div class="weapon-card"><h4>Vandal</h4></div>
+                    </div>
+                </div>
+
+                <div class="weapon-category">
+                    <h3>Fuzis de Precisão</h3>
+                    <div class="weapon-gallery">
+                        <div class="weapon-card"><h4>Marshal</h4></div>
+                        <div class="weapon-card"><h4>Operator</h4></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapas" class="maps-section">
+            <div class="container">
+                <h2 class="section-title">CAMPOS DE BATALHA</h2>
+                <div class="maps-gallery">
+                    <div class="map-card">
+                        <img src="https://i.pinimg.com/736x/d6/c0/40/d6c040c52bc19413842759b3dd5dfb55.jpg" alt="Mapa Ascent">
+                        <h3>Ascent</h3>
+                    </div>
+                    <div class="map-card">
+                        <img src="https://i.pinimg.com/1200x/35/7e/e5/357ee519520cebe121587940e653679f.jpg" alt="Mapa Bind">
+                        <h3>Bind</h3>
+                    </div>
+                    <div class="map-card">
+                        <img src="https://i.pinimg.com/1200x/e7/4b/c3/e74bc39a292e57a5332f52f30065faf0.jpg" alt="Mapa Split">
+                        <h3>Split</h3>
+                    </div>
+                    <div class="map-card">
+                        <img src="https://i.pinimg.com/736x/c2/26/e0/c226e0885e17ceefdbdb87c08f5d3a23.jpg" alt="Mapa Haven">
+                        <h3>Haven</h3>
+                    </div>
+                    <div class="map-card">
+                        <img src="https://i.pinimg.com/1200x/f5/48/b1/f548b1f1022b73ada3e91ccd91a05f5f.jpg" alt="Mapa Icebox">
+                        <h3>Icebox</h3>
+                    </div>
+                    <div class="map-card">
+                        <img src="https://i.pinimg.com/736x/be/ac/50/beac50413713e4268263b885dcc1facc.jpg" alt="Mapa Breeze">
+                        <h3>Breeze</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dicas" class="tips-section">
+            <div class="container">
+                <h2 class="section-title">DICAS PARA INICIANTES</h2>
+                <div class="tips-gallery">
+                    <div class="tip-card">
+                        <h4>Comunicação é Chave</h4>
+                        <p>Use o chat de voz e os pings para informar a localização dos inimigos e coordenar estratégias com sua equipe.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Gerencie sua Economia</h4>
+                        <p>Não compre a arma mais cara toda rodada. Coordene com seu time para garantir que todos tenham equipamentos adequados.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Aprenda a Controlar o Recuo</h4>
+                        <p>Cada arma tem um padrão de recuo. Vá ao modo de treino para aprender a controlar os sprays das suas armas favoritas.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Use suas Habilidades</h4>
+                        <p>As habilidades são tão importantes quanto a mira. Use-as para ganhar vantagem, obter informação e ajudar sua equipe a dominar o mapa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Projeto de Web Design - Outubro de 2025.</p>
+            <p>Este é um site de fã e não é afiliado à Riot Games.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
